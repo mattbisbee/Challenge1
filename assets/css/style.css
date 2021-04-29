@@ -48,14 +48,11 @@ a {
     text-decoration: none;
 }
 
-p {
-    font-size: 16px;
-}
 /*End Text Styling*/
 
 /*Start Hero Image Styling*/
 .hero {
-    height: 800px;
+    height: 1250px;
     width: 100%;
     margin-bottom: 25px;
     background-image: url("../images/digital-marketing-meeting.jpg");
@@ -65,6 +62,7 @@ p {
 /*End Hero Image Styling*/
 
 /*Start Main Content Styling*/
+
 .float-left {
     float: left;
     margin-right: 25px;
@@ -84,19 +82,23 @@ p {
 .services {
     margin-bottom: 20px;
     padding: 50px;
-    height: 300px;
+    height: auto;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
 }
 
 .services img {
-    max-height: 200px;
+    max-height: 300px;
 }
 
 .services h2 {
     margin-bottom: 20px;
-    font-size: 36px;
+    font-size: 55px;
+}
+
+.services p {
+    font-size: 46px;
 }
 /*End Main Content Styling*/
 
@@ -112,17 +114,24 @@ p {
     background-color: #2589bd;
 }
 
-.benefit {
+.gains {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit h3 {
+.gains h2 {
     margin-bottom: 10px;
     text-align: center;
+    font-size: 36px;
 }
 
-.benefit img {
+.gains p {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 55px;
+}
+
+.gains img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
@@ -142,6 +151,225 @@ footer h2 {
 }
 /*End Footer Styling*/
 
+/*Media queries*/
 
-/* Width at 768px and below */
+/* Width at 768px (iPad)and below */
 @media screen and (max-width: 768px) {
+    header h1 {
+        display: inline-block;
+        font-size: 30px;
+    }
+    header nav {
+        padding-top: 15px;
+        margin-right: 20px;
+        font-size: 13px;
+    }
+    .hero {
+        height: 500px;
+        width: 100%;
+    }
+    .content {
+        width:75%;
+        margin-left: 10px;
+    }
+    .services img {
+        height:auto;
+        width: 50%
+    }
+    .services h2 {
+        margin-bottom: 10px;
+        font-size: 35px;
+    }
+    .services p {
+        font-size: 18px;
+    }
+    .benefits {
+        margin-right: 10px;
+        padding: 10px;
+        width: 20%;
+        height: 75%;
+    }
+    .gains {
+        margin-bottom: 15px;
+    }
+    
+    .gains h2 {
+        margin-bottom: 0px;
+        text-align: center;
+        font-size: 22px;
+    }
+    .gains p {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+    
+    .gains img {
+        width: 120px;
+        height: 120px;
+        margin: auto;
+    }
+}
+
+/* Width at 540px (surface duo) and below */
+@media screen and (max-width: 540px) {
+    header {
+        padding: 10px;
+    }
+    header h1 {
+        display: inline-block;
+        font-size: 20px;
+        padding: 10px;
+    }
+    header nav {
+        padding-top: 20px;
+        margin-right: 15px;
+        font-size: 10px;
+    }
+    header nav ul li {
+        margin-left: 5px;
+    }
+    .hero {
+        height: 400px;
+        width: 100%;
+    }
+    .content {
+        width:75%;
+        margin-left: 20px;
+        width: 70%;
+    }
+    .services {
+        padding: 15px;
+        margin-bottom: 10px;
+        height: 285px;
+    }
+    .services img {
+        height:auto;
+        width: 50%
+    }
+    .services h2 {
+        margin-bottom: 20px;
+        font-size: 25px;
+    }
+    .services p {
+        font-size: 17px;
+    }
+    .benefits {
+        margin-right: 10px;
+        padding: 10px;
+        width: 22%;
+        height: 75%;
+    }
+    .gains {
+        margin-bottom: 15px;
+    }
+    
+    .gains h2 {
+        margin-bottom: 0px;
+        text-align: center;
+        font-size: 18px;
+    }
+    .gains p {
+        font-size: 12px;
+        margin-bottom: 38px;
+        text-align: center;
+    }
+    
+    .gains img {
+        width: 100px;
+        height: 100px;
+        margin: 0;
+    }
+    footer {
+        padding: 20px;
+    }
+    footer h2 {
+        font-size: 12px;
+    }
+
+    footer p {
+        font-size: 10px;
+    }
+}
+/* Width at 375px (iPhone 6-7-8) and below */
+@media screen and (max-width: 375px) {
+    header {
+        padding: 0px;
+    }
+    
+    header h1 {
+        display: inline-block;
+        font-size: 15px;
+    }
+    header nav {
+        padding-top: 20px;
+        margin-left: 20px;
+        margin-right: 0px;
+    }
+    header nav ul li {
+        font-size: 6px;
+        padding: 5px;
+        margin-left: 0px;
+    }
+    .hero {
+        height: 250px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .content {
+        width:70%;
+        margin-left: 10px;
+    }
+    .services {
+        height: auto;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    .services img {
+        height: auto;
+        width: 50%;
+    }
+    .services h2 {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    .services p {
+        font-size: 13px;
+    }
+    .benefits {
+        margin-right: 5px;
+        padding: 5px;
+        width: 25%;
+    }
+    .gains {
+        margin-bottom: 15px;
+    }
+    
+    .gains h2 {
+        margin-top: 5px;
+        margin-bottom: 0px;
+        text-align: center;
+        font-size: 14px;
+    }
+    .gains p {
+        font-size: 8px;
+        text-align: center;
+        margin-bottom: 32px;
+    }
+    
+    .gains img {
+        width: 70px;
+        height: 70px;
+        margin: auto;
+    }
+    
+    footer {
+        padding: 15px;
+    }
+
+    footer h2 {
+        font-size: 12px;
+    }
+    footer p {
+        font-size: 10px;
+    }
+}
