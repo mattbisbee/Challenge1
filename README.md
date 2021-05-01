@@ -12,6 +12,11 @@ The CSS code had some out of place rule sets, no comments in the css file, and s
 ### **More Accessible:**
 In order to make the code more accessible to potential customers, I added media queries to accomodate viewing on smaller screens. I added a variety of screen sizes. I was able to optimize the screen for widths of 768px, 540px, and 375px. I optimized the original code for 1080p screens so that the hero image didn't get cut off at the top. 1440p screens are ok but I didn't optimize the code for anything higher since there are probably more 1080p panels out there than 4k. I also looked at the main content of the page and noticed that each paragraph didn't have a lot of text and it appeared quite small. In order to make it easier to read I increased the size of the font. This will also help when viewing the content on a smaller screens
 
+### **Location:**
+Website can be found at :https://mattbisbee.github.io/Challenge1/
+
+GitHub: https://github.com/mattbisbee/Challenge1.git
+
 ## **Images:**
 ![Screenshot](assets/images/page-1.PNG)
 ![Screenshot](assets/images/page-2.PNG)
